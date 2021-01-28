@@ -1,0 +1,62 @@
+{
+  "name": "dj",
+  "private": true,
+  "description": "DJ",
+  "version": "0.1.0",
+  "author": "Anna Ehrnsperger",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "netlify": "netlify dev"
+  },
+  "eslintConfig": {
+    "extends": [
+      "wesbos"
+    ],
+    "rules": {
+      "no-console": 1,
+      "react/prop-types": 1,
+      "require-await": "off"
+    }
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.11.1",
+    "dotenv": "^8.2.0",
+    "framer-motion": "^2.9.5",
+    "gatsby": "^2.31.1",
+    "gatsby-image": "^2.10.0",
+    "gatsby-plugin-preact": "^4.6.0",
+    "gatsby-plugin-react-helmet": "^3.9.0",
+    "gatsby-plugin-styled-components": "^3.9.0",
+    "preact": "^10.5.12",
+    "prop-types": "^15.7.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-helmet": "^5.2.1",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-config-wesbos": "^1.0.1",
+    "eslint-plugin-html": "^6.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "esm": "^3.2.25",
+    "prettier": "^2.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/annaehrnsperger/dj.git"
+  }
+}
