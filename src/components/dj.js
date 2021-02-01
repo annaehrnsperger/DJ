@@ -6,10 +6,6 @@ const DJ = () => {
   const [data, setData] = useState(null);
   const [height, setHeight] = useState(null);
 
-  useEffect(() => {
-    setHeight(typeof window !== 'undefined' && window.innerHeight);
-  }, []);
-
   const image = data?.images[0].url;
   const artist = data?.tracks.items[0].track.artists[0].name;
   const album = data?.tracks.items[0].track.album.name;
@@ -44,6 +40,8 @@ const DJ = () => {
     };
 
     fetchData().catch((error) => console.error(error));
+
+    setHeight(typeof window !== 'undefined' && window.innerHeight);
   }, []);
 
   return (
