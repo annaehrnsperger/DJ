@@ -1,10 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import GlobalStyles from '../../styles/GlobalStyles';
-import Normalize from '../../styles/Normalize';
-import Variables from '../../styles/Variables';
-import Header from '../molecules/header';
-import Footer from '../molecules/footer';
+import GlobalStyles from '../styles/GlobalStyles';
+import Normalize from '../styles/Normalize';
+import Variables from '../styles/Variables';
 
 const Layout = ({ children }) => (
   <>
@@ -17,9 +15,7 @@ const Layout = ({ children }) => (
     {/**
      * Content
      */}
-    <Header />
     <main>{children}</main>
-    <Footer />
   </>
 );
 

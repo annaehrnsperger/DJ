@@ -1,9 +1,8 @@
-# Gatsby Sanity Theme
+# DJ
 
-<!-- ### [www.url.de](https://www.url.de) -->
+### [dj.annaehrnsperger.de](https://dj.annaehrnsperger.de)
 
 - A blazing fast website with [Gatsby.js](https://gatsbyjs.org)
-- Structured content using [Sanity.io](https://www.sanity.io)
 - Global deployment on [Netlify](https://netlify.com)
 
 ## Start Gatsby
@@ -24,14 +23,3 @@ The site is running at
 npm run build
 npm run serve
 ```
-
-## Start Sanity
-
-```
-cd studio/
-npm install
-npm start
-```
-
-The studio is running at
-`http://localhost:3333`

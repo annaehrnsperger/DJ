@@ -3,6 +3,10 @@ import { createGlobalStyle } from 'styled-components';
 const Variables = createGlobalStyle`
 
   :root {
+    /* Colors */
+    --bg-color: #131313;
+    --text-color: #fff;
+
     /* Spacing */
     --spacing-XXS: 1rem;
     --spacing-XS: 2rem;
@@ -23,23 +27,11 @@ const Variables = createGlobalStyle`
     --v-spacing-XL: clamp(var(--spacing-XL), 5vw, var(--spacing-XXL));
 
     /* Fonts */
-    --font-1: 'Helvetica', sans-serif;
-    /* Clamp Fallback */ --headline: calc(30px + (60 - 30) * (100vw - 375px) / (2560 - 375));
-    --headline: clamp(3rem, 5vw, 6rem);
+    --font-1: Helvetica, sans-serif;
     /* Clamp Fallback */ --copy: calc(15px + (30 - 15) * (100vw - 375px) / (2560 - 375));
-    --copy: clamp(1.5rem, 5vw, 3rem);
+    --copy: clamp(1.2rem, 3vw, 1.5rem);
     --letter-spacing: 0.01rem;
     --line-height: 1.2;
-
-    /* Border */
-    --border-width: 1px;
-    --border: var(--border-width) solid var(--text-color);
-
-    /* Layout */
-    --grid-cols: 2;
-    --grid-gap: var(--spacing-S);
-
-    /* Misc */
   }
 `;
 

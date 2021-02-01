@@ -7,10 +7,17 @@ const GlobalStyles = createGlobalStyle`
     color: var(--text-color);
     background: var(--bg-color);
     font-size: 10px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow: hidden;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   body {
-    font-size: var(--fontsize-1);
+    font-size: var(--copy);
     line-height: var(--line-height);
   }
 
@@ -22,16 +29,6 @@ const GlobalStyles = createGlobalStyle`
     height: 100%;
   }
 
-  /* Scrollbar */
-
-  .hide-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
 
   /* Layout */
 
@@ -40,7 +37,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .spacing-inner {
-    padding: var(--v-spacing-S);
+    padding: var(--spacing-XXS);
   }
 
   .spacing-removed {
@@ -59,8 +56,8 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .dark {
-    color: var(--bg-color);
-    background: var(--text-color);
+    color: var(--text-color);
+    background: var(--bg-color);
   }
 
 `;
