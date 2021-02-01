@@ -47,7 +47,10 @@ const DJ = () => {
         <p>{artist}</p>
         <p>{album}</p>
       </div>
-      <div className="vinyl-wrapper">
+      <div
+        className="vinyl-wrapper"
+        style={{ height: typeof window !== 'undefined' && window.innerHeight }}
+      >
         <motion.div
           className="vinyl"
           animate={{ rotate: 360 }}
@@ -89,8 +92,8 @@ const StyledDJ = styled.div`
     position: absolute;
 
     .bg {
-      width: 45vw;
-      height: 45vw;
+      width: 75vw;
+      height: 75vw;
       background: black;
       border-radius: 50%;
       position: relative;
@@ -100,8 +103,6 @@ const StyledDJ = styled.div`
 
     .img-wrapper,
     .inner {
-      width: 45vw;
-      height: 45vw;
       position: absolute;
       display: flex;
       justify-content: center;
@@ -109,16 +110,35 @@ const StyledDJ = styled.div`
     }
 
     img {
-      width: 14vw;
-      height: 14vw;
+      width: 22vw;
+      height: 22vw;
       clip-path: circle(50% at 50% 50%);
     }
 
     .dot {
-      width: 1vw;
-      height: 1vw;
+      width: 1.4vw;
+      height: 1.4vw;
       background: var(--bg-color);
       border-radius: 50%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .vinyl {
+      .bg {
+        width: 45vw;
+        height: 45vw;
+      }
+
+      img {
+        width: 14vw;
+        height: 14vw;
+      }
+
+      .dot {
+        width: 1vw;
+        height: 1vw;
+      }
     }
   }
 `;

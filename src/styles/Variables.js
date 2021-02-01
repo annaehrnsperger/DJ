@@ -28,8 +28,8 @@ const Variables = createGlobalStyle`
 
     /* Fonts */
     --font-1: Helvetica, sans-serif;
-    /* Clamp Fallback */ --copy: calc(15px + (30 - 15) * (100vw - 375px) / (2560 - 375));
-    --copy: clamp(1.2rem, 3vw, 1.5rem);
+    /* Clamp Fallback */ --copy: calc(12px + (15 - 12) * (100vw - 375px) / (2560 - 375));
+    --copy: clamp(1.2rem, 2vw, 1.5rem);
     --letter-spacing: 0.01rem;
     --line-height: 1.2;
   }

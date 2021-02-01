@@ -4,13 +4,9 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `A blank theme for Gatsby.`,
+    title: `DJ`,
+    description: `DJ`,
     author: `Anna Ehrnsperger`,
   },
-  plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-styled-components`,
-    `gatsby-plugin-preact`,
-  ],
+  plugins: [`gatsby-plugin-react-helmet`, `gatsby-plugin-styled-components`],
 };
