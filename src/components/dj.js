@@ -4,6 +4,11 @@ import styled from 'styled-components';
 
 const DJ = () => {
   const [data, setData] = useState(null);
+  const [height, setHeight] = useState(null);
+
+  useEffect(() => {
+    setHeight(typeof window !== 'undefined' && window.innerHeight);
+  }, []);
 
   const image = data?.images[0].url;
   const artist = data?.tracks.items[0].track.artists[0].name;
@@ -47,10 +52,7 @@ const DJ = () => {
         <p>{artist}</p>
         <p>{album}</p>
       </div>
-      <div
-        className="vinyl-wrapper"
-        style={{ height: typeof window !== 'undefined' && window.innerHeight }}
-      >
+      <div className="vinyl-wrapper" style={{ height }}>
         <motion.div
           className="vinyl"
           animate={{ rotate: 360 }}
